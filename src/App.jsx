@@ -1,6 +1,6 @@
-import { Homepage, BlogContentPage } from "./pages";
 import { Routes, Route } from "react-router-dom";
 import useFetch from "./hooks/useFetch";
+import { Homepage, BlogContentPage } from "./pages";
 
 export default function App() {
   let { loading, data, error } = useFetch(
@@ -8,7 +8,6 @@ export default function App() {
   );
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error!</p>;
-  console.log(data);
 
   return (
     <div>

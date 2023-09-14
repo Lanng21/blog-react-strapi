@@ -1,0 +1,13 @@
+GET http://localhost:1337/api/blogs?populate=*
+
+###
+POST http://localhost:1337/api/blogs
+Content-Type: application/json
+
+{
+  "data": {
+      "blogTitle": "This is blog  5",
+      "blogDesc": "This is blog 5",
+      "blogContent": "This is blog 5"
+  }
+}
